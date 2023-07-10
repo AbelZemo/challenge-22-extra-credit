@@ -3,14 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "server/server.js",
-  "scripts": {
+  "scripts": {    
+    "start": "concurrently --kill-others-on-fail \"node server/server.js\" \"npm run start --prefix client\"",
     "build": "cd client && npm run build",
-    "seed":"cd server npm run seed",
+    "seed": "cd server && npm run seed",
     "install-client": "cd client && npm install",
     "heroku-postbuild": "npm run install-client && npm run build",
     "server": "node server/server.js",
-    "develop": "concurrently --kill-others-on-fail \"cd server && npm run watch\" \"cd client && npm start\"",
-    "start": "concurrently --kill-others-on-fail \"node server/server.js\" \"npm run start --prefix client\""
+    "develop": "concurrently --kill-others-on-fail \"cd server && npm run watch\" \"cd client && npm start\""
   },
   "keywords": [],
   "author": "",
