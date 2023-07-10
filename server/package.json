@@ -7,8 +7,8 @@
     "node": "19.8.1",
      "npm": "9.5.1" },
   "scripts": {
-    "start": "nodemon server.js",
-    "watch": "nodemon",
+    "start": "node server.js",
+    "watch": "node",
     "seed": "node config/seeds.js"
   },
   "keywords": [],
@@ -23,8 +23,5 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.1.8",
     "stripe": "^8.67.0"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.22"
   }
 }
