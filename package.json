@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "server/server.js",
-  "scripts": {    
+  "scripts": {
     "start": "concurrently --kill-others-on-fail \"node server/server.js\" \"npm run start --prefix client\"",
     "build": "cd client && npm run build",
     "seed": "cd server && npm run seed",
@@ -26,6 +26,7 @@
     "graphql": "^16.7.1",
     "if-env": "^1.0.4",
     "jsonwebtoken": "^9.0.1",
-    "mongoose": "^7.3.2"
+    "mongoose": "^7.3.2",
+    "stripe": "^12.12.0"
   }
 }
