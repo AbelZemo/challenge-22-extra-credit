@@ -2,14 +2,10 @@
   "name": "mern-shopping",
   "version": "1.0.0",
   "description": "",
-  "main":"server/server.js",
-  "engines": { 
-    "node": "19.8.1",
-     "npm": "9.8.1" },
+  "main": "server/server.js",
   "scripts": {
-    "install": "cd server && npm i && cd ../client && npm i",
-    "seed": "cd server && npm run seed",
     "build": "cd client && npm run build",
+    "seed":"cd server npm run seed",
     "install-client": "cd client && npm install",
     "heroku-postbuild": "npm run install-client && npm run build",
     "server": "node server/server.js",
@@ -30,7 +26,6 @@
     "graphql": "^16.7.1",
     "if-env": "^1.0.4",
     "jsonwebtoken": "^9.0.1",
-    "mongoose": "^7.3.2",
-    "stripe": "^12.12.0"
+    "mongoose": "^7.3.2"
   }
 }
